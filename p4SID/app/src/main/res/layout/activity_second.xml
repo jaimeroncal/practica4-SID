@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -12,31 +12,75 @@
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
+
         <!-- NOMBRE PRODUCTO -->
-        <TextView android:id="@+id/titulo2"
-            android:textSize="15sp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título: "
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/titulo2"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Título"/>
+        </LinearLayout>
+
+        <!-- NOMBRE PRODUCTO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción: "
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/descripcion2"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción"/>
+        </LinearLayout>
+
+        <!-- NOMBRE PRODUCTO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tags: "
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/tags2"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tags"/>
+        </LinearLayout>
+        <!-- IMAGEN -->
+        <ImageView android:id="@+id/imagen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:maxWidth="300dp"
+            android:maxHeight="700dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible">
+        </ImageView>
+        <TextView
+            android:id="@+id/noimage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Titutlo"/>
-        <!-- NOMBRE PRODUCTO -->
-        <TextView android:id="@+id/descripcion2"
-            android:textSize="15sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="descripcion/url"/>
-        <!-- NOMBRE PRODUCTO -->
-        <TextView android:id="@+id/enlace2"
-            android:textSize="15sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="enlace"/>
+            android:text="No hay imagen disponible."
+            android:gravity="center_horizontal"
+            android:visibility="invisible"/>
     </LinearLayout>
-    <!-- IMAGEN -->
-    <ImageView android:id="@+id/imagen2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:scaleType="fitXY"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/ic_launcher_background">
-    </ImageView>
-</LinearLayout>
+</ScrollView>

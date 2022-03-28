@@ -19,7 +19,9 @@
         android:id="@+id/empty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No se ha realizado la conexión."
+        android:text="Haz click en el icono de búsqueda."
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         app:layout_constraintStart_toStartOf="@+id/list"
         app:layout_constraintTop_toTopOf="@+id/list" />
 

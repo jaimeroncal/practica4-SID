@@ -12,7 +12,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:scaleType="fitXY"
-        android:src="@drawable/ic_launcher_background">
+        android:src="@drawable/flickr">
     </ImageView>
     <LinearLayout android:orientation="vertical"
         android:layout_width="match_parent"
@@ -20,22 +20,55 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
         <!-- NOMBRE PRODUCTO -->
-        <TextView android:id="@+id/titulo"
-            android:textSize="15sp"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Titutlo"/>
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título: "
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/titulo"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Título"/>
+        </LinearLayout>
+
         <!-- NOMBRE PRODUCTO -->
-        <TextView android:id="@+id/descripcion"
-            android:textSize="15sp"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="descripcion/url"/>
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción: "
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/descripcion"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción"/>
+        </LinearLayout>
+
         <!-- NOMBRE PRODUCTO -->
-        <TextView android:id="@+id/enlace"
-            android:textSize="15sp"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="enlace"/>
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL: "
+                android:textStyle="bold"/>
+            <TextView android:id="@+id/enlace"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Url"/>
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
