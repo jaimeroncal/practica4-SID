@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity
             // Evita crear una AsyncTask cada vez que, por ejemplo, hay una rotación
             Log.i(TAG, "onCreate: About to create MyAsyncTask");
             myTask = new MyAsyncTask(this);
-            myTask.execute("https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=bf75df07beefce33b3099fb9092a485f&extras=description,url_h%2Ctags&format=json&nojsoncallback=1");
+            myTask.execute("https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key="+getString(R.string.apikey)+"&extras=description,url_h%2Ctags&format=json&nojsoncallback=1");
         }
         else
             myTask.attach(this);
